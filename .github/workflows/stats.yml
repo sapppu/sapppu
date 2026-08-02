@@ -24,21 +24,9 @@ jobs:
           GH_LOGIN: ${{ github.repository_owner }}
         run: python3 scripts/generate_stats.py
 
-      - name: Generate animated contribution graph
-        id: snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            contrib-snake.svg?palette=github-light&color_snake=#216e39
-            contrib-snake-dark.svg?palette=github-dark&color_snake=#39d353
-
-      - name: Move animated graph into repo root
-        run: cp ${{ steps.snake.outputs.outputs_dir }}/*.svg .
-
       - name: Commit and push changes
         run: |
-          FILES="stats.svg streak.svg langs.svg year.svg hd-*.svg contrib-snake.svg contrib-snake-dark.svg"
+          FILES="stats.svg calendar.svg streak.svg langs.svg year.svg hd-*.svg"
           if [ -z "$(git status --porcelain -- $FILES)" ]; then
             echo "No stats changed."
             exit 0
