@@ -11,7 +11,7 @@
 </tr>
 </table>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=58A6FF&center=true&vCenter=true&width=620&lines=MCA+%40+MIT+World+Peace+University%2C+Pune;Full-Stack+%7C+Distributed+Systems;Agentic+AI+%7C+Compiler+Internals;Building+production-grade+systems)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=39D353&center=true&vCenter=true&width=620&lines=MCA+%40+MIT+World+Peace+University%2C+Pune;Full-Stack+%7C+Distributed+Systems;Agentic+AI+%7C+Compiler+Internals;Building+production-grade+systems)](https://git.io/typing-svg)
 
 [![Email](https://img.shields.io/badge/swapnajtolnure123%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:swapnajtolnure123@gmail.com) &nbsp;·&nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swapnaj-tolnure/) &nbsp;·&nbsp;
@@ -25,6 +25,22 @@
 > Crafting full-stack web applications, database internals, and agentic AI workflows.
 
 I build production-grade web systems, compiler pipelines, and custom developer tools. Currently focused on distributed systems, transaction isolation internals, and optimizing LLM agent tool-use patterns.
+
+<img src="./hd-stats.svg" width="620" alt="stats"/>
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./contrib-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="./contrib-snake.svg"/>
+  <img src="./contrib-snake.svg" width="620" alt="Contribution graph, animated"/>
+</picture>
+
+<img src="./streak.svg" width="620" alt="Current and longest streak"/>
+<img src="./langs.svg" width="620" alt="Top languages by bytes and by repo"/>
+<img src="./year.svg" width="620" alt="The last year, one character per day"/>
+
+</div>
 
 <img src="./hd-stack.svg" width="620" alt="stack"/>
 
@@ -156,14 +172,6 @@ Secured runner-up in a team of 5 by designing a vendor management system using a
 [![Software Engineer](https://img.shields.io/badge/Software_Engineer-HackerRank-1BA94C?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/4294ebdb6b86)
 [![Problem Solving (Intermediate)](https://img.shields.io/badge/Problem_Solving_(Intermediate)-HackerRank-1BA94C?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/8eb54b80d741)
 [![Networking Basics](https://img.shields.io/badge/Networking_Basics-Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white)](https://www.credly.com/badges/eac2fa36-a44f-41d1-bf29-e325e59636a5)
-
-<img src="./hd-stats.svg" width="620" alt="stats"/>
-
-<div align="center">
-<img src="./streak.svg" width="620" alt="Current and longest streak"/>
-<img src="./langs.svg" width="620" alt="Top languages by bytes and by repo"/>
-<img src="./year.svg" width="620" alt="The last year, one character per day"/>
-</div>
 
 <img src="./hd-about-this-page.svg" width="620" alt="about this page"/>
 
