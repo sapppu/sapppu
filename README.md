@@ -1,13 +1,22 @@
 <div align="center">
-<img src="./ascii.svg" width="460" alt="Swapnaj Tolnure"/>
+
+<table>
+<tr>
+<td width="38%" align="center" valign="middle">
+<img src="./ascii.svg" width="400" alt="Swapnaj Tolnure"/>
+</td>
+<td width="62%" align="center" valign="middle">
+<img src="./stats.svg" width="620" alt="Contributions in the last year"/>
+</td>
+</tr>
+</table>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=58A6FF&center=true&vCenter=true&width=620&lines=MCA+%40+MIT+World+Peace+University%2C+Pune;Full-Stack+%7C+Distributed+Systems;Agentic+AI+%7C+Compiler+Internals;Building+production-grade+systems)](https://git.io/typing-svg)
-
-<img src="./stats.svg" width="620" alt="Contributions in the last year"/>
 
 [![Email](https://img.shields.io/badge/swapnajtolnure123%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:swapnajtolnure123@gmail.com) &nbsp;·&nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swapnaj-tolnure/) &nbsp;·&nbsp;
 [![GitHub](https://img.shields.io/badge/sapppu-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/sapppu)
+
 </div>
 
 <img src="./hd-about.svg" width="620" alt="about"/>
@@ -21,16 +30,21 @@ I build production-grade web systems, compiler pipelines, and custom developer t
 
 **Languages**
 
-[![Languages](https://skillicons.dev/icons?i=java,cpp,py,c,ts,js)](https://skillicons.dev)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
 **Backend**
 
-[![Backend](https://skillicons.dev/icons?i=spring,nestjs)](https://skillicons.dev)
-
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
 ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white)
 ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-FF6C37?style=flat-square)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-FF6C37?style=flat-square&logo=postman&logoColor=white)
 ![MVC](https://img.shields.io/badge/MVC-6DB33F?style=flat-square&logo=spring&logoColor=white)
 ![Servlets](https://img.shields.io/badge/Servlets-007396?style=flat-square&logo=openjdk&logoColor=white)
 ![JSP](https://img.shields.io/badge/JSP-007396?style=flat-square&logo=openjdk&logoColor=white)
@@ -38,16 +52,20 @@ I build production-grade web systems, compiler pipelines, and custom developer t
 
 **Frontend**
 
-[![Frontend](https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind,bootstrap)](https://skillicons.dev)
-
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=thymeleaf&logoColor=white)
 
 **Database**
 
-[![Database](https://skillicons.dev/icons?i=postgres,mysql)](https://skillicons.dev)
-
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![BCNF Normalization](https://img.shields.io/badge/BCNF_Normalization-336791?style=flat-square&logo=postgresql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat-square&logo=databricks&logoColor=white)
+![BCNF Normalization](https://img.shields.io/badge/Normalization_(BCNF)-336791?style=flat-square&logo=postgresql&logoColor=white)
 
 **AI / Agentic**
 
@@ -59,15 +77,20 @@ I build production-grade web systems, compiler pipelines, and custom developer t
 
 **Tools**
 
-[![Tools](https://skillicons.dev/icons?i=git,linux,maven,gradle,postman,idea,eclipse)](https://skillicons.dev)
-
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Apache Tomcat](https://img.shields.io/badge/Apache_Tomcat-F8DC75?style=flat-square&logo=apachetomcat&logoColor=black)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white)
+![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=eclipseide&logoColor=white)
 
 **IoT**
 
-[![IoT](https://skillicons.dev/icons?i=raspberrypi,arduino)](https://skillicons.dev)
-
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
+![Arduino Uno](https://img.shields.io/badge/Arduino_Uno-00979D?style=flat-square&logo=arduino&logoColor=white)
 
 <img src="./hd-projects.svg" width="620" alt="projects"/>
 
@@ -128,7 +151,7 @@ Secured runner-up in a team of 5 by designing a vendor management system using a
 
 <img src="./hd-certifications.svg" width="620" alt="certifications"/>
 
-[![Alpha – DSA with Java](https://img.shields.io/badge/Alpha_%E2%80%93_Data_Structures_%26_Algorithms_with_Java-Apna_College-FF6C37?style=flat-square)](https://drive.google.com/file/d/1snE7WBjOVfWAX-Mqz-0L9UF-gE6Ydem8/view)
+[![Alpha – DSA with Java](https://img.shields.io/badge/Alpha_%E2%80%93_Data_Structures_%26_Algorithms_with_Java-Apna_College-FF6C37?style=flat-square&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1snE7WBjOVfWAX-Mqz-0L9UF-gE6Ydem8/view)
 [![Software Engineer Intern](https://img.shields.io/badge/Software_Engineer_Intern-HackerRank-1BA94C?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/f498604e6434)
 [![Software Engineer](https://img.shields.io/badge/Software_Engineer-HackerRank-1BA94C?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/4294ebdb6b86)
 [![Problem Solving (Intermediate)](https://img.shields.io/badge/Problem_Solving_(Intermediate)-HackerRank-1BA94C?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/8eb54b80d741)
