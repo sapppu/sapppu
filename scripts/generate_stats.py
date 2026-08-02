@@ -36,6 +36,11 @@ LIGHT = dict(data="#6e7681", emph="#424a53", dim="#8c959f",
 DARK = dict(data="#c9d1d9", emph="#f0f6fc", dim="#8b949e",
             rule="#30363d", surface="#0d1117")
 
+CAL_L = ("#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39")
+CAL_D = ("#161b22", "#0e4429", "#006d32", "#26a641", "#39d353")
+CAL_LP = ("#ebedf0", "#40c463", "#30a14e", "#216e39", "#2ea043")
+CAL_DP = ("#161b22", "#006d32", "#26a641", "#39d353", "#56d364")
+
 MONO = ("JBMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
         "&apos;Liberation Mono&apos;,monospace")
 FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
@@ -97,6 +102,13 @@ def pretty(iso):
     return f"{MON[d.month - 1]} {d.day}"
 
 
+def level(v):
+    for i, cut in enumerate((0, 2, 5, 9)):
+        if v <= cut:
+            return i
+    return 4
+
+
 def streaks(days):
     best = dict(length=0, start=None, end=None)
     run, run_start = 0, None
@@ -153,7 +165,7 @@ def summarise(user):
         by_size=by_size, by_repo=by_repo)
 
 
-def style(extra="", font=None):
+def style(extra="", font=None, dark_extra=""):
     def block(t):
         return (f".d-f{{fill:{t['data']}}}.d-s{{stroke:{t['data']}}}"
                 f".e-f{{fill:{t['emph']}}}.m-f{{fill:{t['dim']}}}"
@@ -161,13 +173,13 @@ def style(extra="", font=None):
     return (f"<style>{font or font_text()}"
             f"{block(LIGHT)}.w{{fill:{LIGHT['data']};opacity:.13}}{extra}"
             f"@media(prefers-color-scheme:dark){{{block(DARK)}"
-            f".w{{fill:{DARK['data']};opacity:.16}}}}</style>")
+            f".w{{fill:{DARK['data']};opacity:.16}}{dark_extra}}}</style>")
 
 
-def head(w, h, font=None):
+def head(w, h, font=None, extra="", dark_extra=""):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
             f'viewBox="0 0 {w} {h}" fill="none" font-family="{MONO}">'
-            + style(font=font))
+            + style(extra, font, dark_extra))
 
 
 def fade(delay, dur=0.45):
@@ -202,6 +214,78 @@ def hbar(x, y, w, h, cls="d-f", r=3.0):
             f'Q{x + w:.1f} {y:.1f} {x + w:.1f} {y + r:.1f}'
             f'V{y + h - r:.1f}Q{x + w:.1f} {y + h:.1f} {x + w - r:.1f} {y + h:.1f}'
             f'H{x:.1f}Z" class="{cls}"/>')
+
+
+def calendar_css():
+    """Green ramp for the day cells, with each level breathing on its own clock."""
+    light = [f".g0{{fill:{CAL_L[0]}}}"]
+    dark = [f".g0{{fill:{CAL_D[0]}}}"]
+    frames = []
+    for i in range(1, 5):
+        light.append(f".g{i}{{fill:{CAL_L[i]};animation:k{i} "
+                     f"{2.60 + i * 0.35:.2f}s ease-in-out infinite}}")
+        dark.append(f".g{i}{{fill:{CAL_D[i]};animation-name:n{i}}}")
+        frames.append(f"@keyframes k{i}{{0%,100%{{fill:{CAL_L[i]}}}"
+                      f"50%{{fill:{CAL_LP[i]}}}}}"
+                      f"@keyframes n{i}{{0%,100%{{fill:{CAL_D[i]}}}"
+                      f"50%{{fill:{CAL_DP[i]}}}}}")
+    light.append("@media(prefers-reduced-motion:reduce)"
+                 "{.g1,.g2,.g3,.g4{animation:none}}")
+    return "".join(light) + "".join(frames), "".join(dark)
+
+
+def draw_calendar(s):
+    weeks = s["weeks"]
+    pad_l, pad_t = LEFT, 46
+    step = (WIDTH - pad_l) / max(len(weeks), 1)
+    cell = step - 2.1
+    H = int(pad_t + 7 * step + 24)
+
+    extra, dark_extra = calendar_css()
+    p = [head(WIDTH, H, extra=extra, dark_extra=dark_extra)]
+    p.append(f'<g opacity="0">{fade(0.10)}'
+             + label(pad_l, 16, "THE LAST YEAR", 9, "m-f",
+                     extra=' letter-spacing="1.3"')
+             + label(pad_l, 32, f"{s['total']} contributions &#183; "
+                     f"{s['active']} active days", 11)
+             + '</g>')
+
+    legend_x = WIDTH - 91
+    p.append(f'<g opacity="0">{fade(1.20)}'
+             + label(legend_x - 6, 32, "less", 9, "m-f", "end")
+             + "".join(f'<rect x="{legend_x + i * 13:.1f}" y="24" width="9" '
+                       f'height="9" rx="2" class="g{i}"/>' for i in range(5))
+             + label(WIDTH, 32, "more", 9, "m-f", "end") + '</g>')
+
+    for i, w in enumerate(weeks):
+        x = pad_l + i * step
+        cells = []
+        for d in w:
+            y = pad_t + d.get("weekday", 0) * step
+            lv = level(d["contributionCount"])
+            phase = f' style="animation-delay:-{i * 0.045:.2f}s"' if lv else ""
+            cells.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{cell:.1f}" '
+                         f'height="{cell:.1f}" rx="2" class="g{lv}"{phase}/>')
+        p.append(f'<g opacity="0"><animate attributeName="opacity" from="0" '
+                 f'to="1" begin="{0.18 + i * 0.014:.2f}s" dur="0.50s" '
+                 f'fill="freeze"/>{"".join(cells)}</g>')
+
+    for r, lab in ((1, "mon"), (3, "wed"), (5, "fri")):
+        p.append(label(pad_l - 7, pad_t + r * step + cell - 1.2, lab, 9, "m-f",
+                       "end"))
+
+    last_m, last_x = None, -999.0
+    base_y = pad_t + 7 * step + 12
+    for i, w in enumerate(weeks):
+        m = int(w[0]["date"][5:7])
+        x = pad_l + i * step
+        if m != last_m and i < len(weeks) - 1 and x - last_x >= 34:
+            p.append(label(x, base_y, MON[m - 1], 9, "m-f"))
+            last_x = x
+        last_m = m
+
+    p.append("</svg>")
+    return "".join(p)
 
 
 def draw_stats(s):
@@ -321,12 +405,6 @@ def draw_year(s):
     ncols = len(weeks) * COLW
     H = int(pad_t + 7 * LH + 26)
 
-    def level(v):
-        for i, cut in enumerate((0, 2, 5, 9)):
-            if v <= cut:
-                return i
-        return 4
-
     p = [head(WIDTH, H)]
     p.append(f'<g opacity="0">{fade(0.10)}'
              + label(pad_l, 16, "THE YEAR", 9, "m-f",
@@ -403,9 +481,11 @@ def main():
     out_dir = os.environ.get("OUT_DIR", ".")
 
     s = summarise(fetch(login, token))
-    files = {"stats.svg": draw_stats(s), "streak.svg": draw_streak(s),
-             "langs.svg": draw_langs(s), "year.svg": draw_year(s)}
-    for word in ("about", "stack", "projects", "stats", "about this page"):
+    files = {"stats.svg": draw_stats(s), "calendar.svg": draw_calendar(s),
+             "streak.svg": draw_streak(s), "langs.svg": draw_langs(s),
+             "year.svg": draw_year(s)}
+    for word in ("about", "stack", "projects", "achievements",
+                 "certifications", "stats", "about this page"):
         files[f"hd-{word.replace(' ', '-')}.svg"] = draw_heading(word)
 
     changed = [n for n, svg in files.items()
