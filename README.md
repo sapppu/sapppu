@@ -2,11 +2,11 @@
 
 <table>
 <tr>
-<td width="38%" align="center" valign="middle">
-<img src="./ascii.svg" width="400" alt="Swapnaj Tolnure"/>
+<td width="38%" align="center" valign="middle" style="background: #0d1117; border-radius: 12px; padding: 10px;">
+  <img src="./ascii.svg" width="400" alt="Swapnaj Tolnure"/>
 </td>
-<td width="62%" align="center" valign="middle">
-<img src="./stats.svg" width="620" alt="Contributions in the last year"/>
+<td width="62%" align="center" valign="middle" style="background: #0d1117; border-radius: 12px; padding: 10px;">
+  <img src="./stats.svg" width="620" alt="Contributions in the last year"/>
 </td>
 </tr>
 </table>
@@ -21,30 +21,16 @@
 
 ---
 
-### 👨‍💻 About
+<table width="100%">
+<tr>
+<td width="50%" valign="top" style="background: linear-gradient(145deg, #1a1a2e, #16213e); border-radius: 16px; padding: 20px; color: #c9d1d9;">
+
+### 👨‍💻 About Me
 
 > MCA student at MIT World Peace University, Pune.  
 > Crafting full‑stack web applications, database internals, and agentic AI workflows.
 
 I build production‑grade web systems, compiler pipelines, and custom developer tools. Currently focused on distributed systems, transaction isolation internals, and optimizing LLM agent tool‑use patterns.
-
----
-
-### 📊 Stats
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./contrib-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="./contrib-snake.svg"/>
-  <img src="./contrib-snake.svg" width="620" alt="Contribution graph, animated"/>
-</picture>
-
-<img src="./streak.svg" width="620" alt="Current and longest streak"/>
-<img src="./langs.svg" width="620" alt="Top languages by bytes and by repo"/>
-<img src="./year.svg" width="620" alt="The last year, one character per day"/>
-
-</div>
 
 ---
 
@@ -107,74 +93,33 @@ I build production‑grade web systems, compiler pipelines, and custom developer
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
 ![Arduino Uno](https://img.shields.io/badge/Arduino_Uno-00979D?style=flat&logo=arduino&logoColor=white)
 
----
+</td>
+<td width="50%" valign="top" style="background: linear-gradient(145deg, #0f3460, #16213e); border-radius: 16px; padding: 20px; color: #c9d1d9;">
 
-### 🚀 Projects
+### 📊 GitHub Contributions
 
-<details>
-<summary><b>SQL Playground</b> – Full‑stack SQL execution engine from scratch</summary>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./contrib-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="./contrib-snake.svg"/>
+  <img src="./contrib-snake.svg" width="100%" alt="Contribution graph, animated"/>
+</picture>
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
+<br><br>
 
-A full-stack SQL execution environment backed by a hand‑written Java query engine — Lexer → Recursive‑Descent Parser → AST → Cost‑Based Query Planner → Executor. Ships with B‑Tree indexing, MVCC transaction isolation, and Write‑Ahead Log (WAL) crash recovery. React + Vite frontend with SQL syntax highlighting, live schema browser, execution plan visualizer, and JWT‑authenticated per‑user isolated sessions. No external database, no Docker, no cloud.
-</details>
+<table width="100%">
+<tr>
+<td align="center" style="background: #1e293b; border-radius: 10px; padding: 8px;">
+  <img src="./streak.svg" width="100%" alt="Current and longest streak"/>
+</td>
+<td align="center" style="background: #1e293b; border-radius: 10px; padding: 8px;">
+  <img src="./langs.svg" width="100%" alt="Top languages by bytes and by repo"/>
+</td>
+</tr>
+</table>
 
-<details>
-<summary><b>AI Code Review App</b> – Cross‑platform mobile code reviewer</summary>
+<br>
 
-![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat&logo=react&logoColor=black)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![LLM API](https://img.shields.io/badge/LLM_API-412991?style=flat&logo=openai&logoColor=white)
-
-Cross‑platform mobile app for line‑by‑line AI code review. NestJS backend handles prompt construction, LLM API orchestration, and structured response parsing. React Native frontend ships a language selector, syntax‑highlighted input editor, and structured review output screen. Implements agentic tool‑use patterns to detect code smells, suggest fixes, and explain reasoning per line.
-</details>
-
-<details>
-<summary><b>College ERP System</b> – Production‑grade RBAC system</summary>
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat&logo=springsecurity&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=flat&logo=thymeleaf&logoColor=white)
-
-Production‑grade ERP system with role‑based access control (RBAC) for Admin, Faculty, and Student roles using Spring Security with session authentication. Inheritance‑based relational schema (People → Student/Faculty) mapped with Spring Data JPA and Hibernate ORM. Apache POI integration across 20+ administrative modules for Excel‑based data import/export.
-</details>
-
-<details>
-<summary><b>Online Service Management System</b> – Service center workflow</summary>
-
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
-
-Full‑stack web application for service center workflow management. Covers inventory tracking, automated billing, and technician management. Generates business‑facing product sales and service work reports to surface operational metrics for decision‑making.
-</details>
-
-<details>
-<summary><b>Local Events Aggregator</b> – Event discovery platform</summary>
-
-![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwindcss&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-
-Scalable web platform for searching, filtering, and engaging with local event organizers. Integrates real‑time event updates and an interactive chat feature. Django drives the backend architecture and PostgreSQL persistence; TailwindCSS handles the responsive UI.
-</details>
-
-<details>
-<summary><b>Fire / Gas Leak Alert System</b> – IoT home safety</summary>
-
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat&logo=raspberrypi&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![IoT](https://img.shields.io/badge/IoT-00979D?style=flat&logo=arduino&logoColor=white)
-
-IoT‑based home safety system using a Raspberry Pi with an MQ6 Gas Sensor and IR Flame Sensor. A lightweight Python script runs continuous real‑time monitoring and threshold analysis, firing instant Pushbullet API push notifications to the homeowner on any alert.
-</details>
+<img src="./year.svg" width="100%" alt="The last year, one character per day"/>
 
 ---
 
@@ -190,11 +135,87 @@ Secured runner‑up in a team of 5 by designing a vendor management system using
 
 ### 📜 Certifications
 
-[![Alpha – DSA with Java](https://img.shields.io/badge/Alpha_–_Data_Structures_&_Algorithms_with_Java-Apna_College-FF6C37?style=flat&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1snE7WBjOVfWAX-Mqz-0L9UF-gE6Ydem8/view)
-[![Software Engineer Intern](https://img.shields.io/badge/Software_Engineer_Intern-HackerRank-1BA94C?style=flat&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/f498604e6434)
-[![Software Engineer](https://img.shields.io/badge/Software_Engineer-HackerRank-1BA94C?style=flat&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/4294ebdb6b86)
-[![Problem Solving (Intermediate)](https://img.shields.io/badge/Problem_Solving_(Intermediate)-HackerRank-1BA94C?style=flat&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/8eb54b80d741)
+[![Alpha – DSA with Java](https://img.shields.io/badge/Alpha_–_Data_Structures_&_Algorithms_with_Java-Apna_College-FF6C37?style=flat&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1snE7WBjOVfWAX-Mqz-0L9UF-gE6Ydem8/view)  
+[![Software Engineer Intern](https://img.shields.io/badge/Software_Engineer_Intern-HackerRank-1BA94C?style=flat&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/f498604e6434)  
+[![Software Engineer](https://img.shields.io/badge/Software_Engineer-HackerRank-1BA94C?style=flat&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/4294ebdb6b86)  
+[![Problem Solving (Intermediate)](https://img.shields.io/badge/Problem_Solving_(Intermediate)-HackerRank-1BA94C?style=flat&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/8eb54b80d741)  
 [![Networking Basics](https://img.shields.io/badge/Networking_Basics-Cisco-1BA0D7?style=flat&logo=cisco&logoColor=white)](https://www.credly.com/badges/eac2fa36-a44f-41d1-bf29-e325e59636a5)
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🚀 Projects
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top" style="background: #1e293b; border-radius: 12px; padding: 15px; margin: 5px;">
+
+**SQL Playground** – Full‑stack SQL execution engine from scratch  
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)  
+A full‑stack SQL environment with hand‑written lexer, parser, AST, cost‑based planner, executor, B‑Tree indexing, MVCC, and WAL. React + Vite frontend with syntax highlighting, schema browser, plan visualizer, and JWT auth.
+
+</td>
+<td width="50%" valign="top" style="background: #1e293b; border-radius: 12px; padding: 15px; margin: 5px;">
+
+**AI Code Review App** – Cross‑platform mobile code reviewer  
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat&logo=react&logoColor=black)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![LLM API](https://img.shields.io/badge/LLM_API-412991?style=flat&logo=openai&logoColor=white)  
+Line‑by‑line AI code review app. NestJS backend orchestrates LLM prompts and structured responses. React Native frontend with syntax‑highlighted editor and structured output. Uses agentic tool‑use for code smell detection and fix suggestions.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" style="background: #1e293b; border-radius: 12px; padding: 15px; margin: 5px;">
+
+**College ERP System** – Production‑grade RBAC system  
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat&logo=springsecurity&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=flat&logo=thymeleaf&logoColor=white)  
+ERP with role‑based access (Admin/Faculty/Student) using Spring Security & session auth. Inheritance‑based schema (People → Student/Faculty) with JPA/Hibernate. Apache POI for 20+ Excel import/export modules.
+
+</td>
+<td width="50%" valign="top" style="background: #1e293b; border-radius: 12px; padding: 15px; margin: 5px;">
+
+**Online Service Management System** – Service center workflow  
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)  
+Full‑stack app for service center management: inventory, automated billing, technician tracking. Generates business reports for product sales and service metrics.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" style="background: #1e293b; border-radius: 12px; padding: 15px; margin: 5px;">
+
+**Local Events Aggregator** – Event discovery platform  
+![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwindcss&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)  
+Scalable platform to search, filter, and engage with local events. Real‑time updates and interactive chat. Django backend, PostgreSQL, responsive TailwindUI.
+
+</td>
+<td width="50%" valign="top" style="background: #1e293b; border-radius: 12px; padding: 15px; margin: 5px;">
+
+**Fire / Gas Leak Alert System** – IoT home safety  
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat&logo=raspberrypi&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![IoT](https://img.shields.io/badge/IoT-00979D?style=flat&logo=arduino&logoColor=white)  
+Raspberry Pi with MQ6 gas sensor and IR flame sensor. Python script monitors thresholds and sends instant Pushbullet alerts to homeowners.
+
+</td>
+</tr>
+</table>
 
 ---
 
