@@ -2,11 +2,8 @@
 
 <table>
 <tr>
-<td width="38%" align="center" valign="middle" style="background: #0d1117; border-radius: 12px; padding: 10px;">
+<td align="center" valign="middle" style="background: #0d1117; border-radius: 12px; padding: 10px;">
   <img src="./ascii.svg" width="400" alt="Swapnaj Tolnure"/>
-</td>
-<td width="62%" align="center" valign="middle" style="background: #0d1117; border-radius: 12px; padding: 10px;">
-  <img src="./stats.svg" width="620" alt="Contributions in the last year"/>
 </td>
 </tr>
 </table>
