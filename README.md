@@ -161,7 +161,7 @@ Secured runner-up in a team of 5 by designing a vendor management system using a
 [![Problem Solving (Intermediate)](https://img.shields.io/badge/Problem_Solving_(Intermediate)-HackerRank-1BA94C?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/certificates/8eb54b80d741)
 [![Networking Basics](https://img.shields.io/badge/Networking_Basics-Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white)](https://www.credly.com/badges/eac2fa36-a44f-41d1-bf29-e325e59636a5)
 
-<img src="./hd-stats.svg" width="620" alt="stats"/>
+<!-- <img src="./hd-stats.svg" width="620" alt="stats"/>
 
 <div align="center">
 <img src="./streak.svg" width="620" alt="Current and longest streak"/>
@@ -178,4 +178,4 @@ They animate with SMIL / CSS keyframes inside the SVG, because GitHub strips scr
 
 The typeface is [JetBrains Mono](scripts/fonts), subset to just the characters each graphic draws and inlined as base64. That isn't only for looks: the portrait's grid assumes an advance width of exactly 0.600 em, and a viewer whose default monospace is narrower would otherwise see it squeezed.
 
-Language totals cover public repositories only. `year.svg` uses the portrait's character ramp: `:` `+` `#` `@`, quiet to loud.
+Language totals cover public repositories only. `year.svg` uses the portrait's character ramp: `:` `+` `#` `@`, quiet to loud. -->
